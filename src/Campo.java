@@ -1,5 +1,5 @@
 import javax.swing.JPanel;
-
+import java.util.Random;
 public class Campo extends JPanel{
 
     private Cella[][] campo;
@@ -23,8 +23,23 @@ public class Campo extends JPanel{
 
             }
         }
+    }
 
+    public void generaMine(){
+        Random r = new Random();
+        for(int i = 0; i < campo.length; i++){
+            for(int j = 0; j < campo.length; j++){
+                int n = rand.nextInt(o,campo.length);
+                    
+            }
+        }
+    }
 
+    public void contaIndizi(){
+
+    }
+
+    public void scopriCella(){
 
     }
 }
